@@ -90,7 +90,7 @@
 
     lotto.sort(function(a,b){
         return a-b ;});
-        alert(lotto);
+        
       lot_a=lotto[0];
       lot_b=lotto[1];
       lot_c=lotto[2];
