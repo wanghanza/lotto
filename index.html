@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>로또 알려드림</title>
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function(){
+      $(".box_1").hide();
+
+      $(".rull_1").on("click", function(){
+        $(".box_1").slideToggle(500,"linear");
+       });
+
+      $(".box_2").hide();
+
+       $(".rull_2").on("click", function(){
+         $(".box_2").slideToggle(500,"linear");
+        });
+
+      $(".rull_3").on("click", function(){
+         location.href='lotto_main.html'
+      });
+
+    });
+
+    </script>
+
+    <style>
+      body { text-align : center;
+            font-size: 20px;}
+      h2 { background-color: #eee; }
+    </style>
+  </head>
+  <body>
+    <p>
+    </p>
+    <p><img src="images/lotto_info_head.jpg"></p>
+    <h2 class="rull_1"> 로또, 잘 나오는 번호는 따로 있습니다!! ☜ </h2>
+    <div class="box_1">
+    <p> 2002년 연말에 시작된 로또! 그동안 900여 회가 넘게 진행됐습니다. <br>
+       그러면서 자연스럽게 잘 나오는 번호와 잘 안 나오는 번호가 생겨났습니다. <br>
+       이론적으로 로또 공 한 개가 나올 확률 1/45이지만, 무슨 이유에서인지 <br>
+       가장 잘 나오는 번호와 가장 안 나오는 번호간 빈도수의 차이는 눈에 띄게 나타나고 있습니다. <br></p>
+       <img src="images/lotto_rate.png" width="450px" align="center">
+   <p> 번호간 이런 차이를 무시한 채 그냥 같은 확률로 번호만 무작위로 뽑아서 드리는<br>
+
+     로또 앱은 이제 지우세요! <br> '로또 알려드림'은 번호간 출현 빈도 차이를 추첨에 반영했습니다!!</p>
+   </div>
+     <h2 class="rull_2"> 이상적 번호조합을 총합 확률로 다시 검증합니다!! ☜</h2>
+     <div class="box_2">
+     <p> 로또 번호 6개를 더한 '총합'을 분석해보면 다음의 그래프와 같이 가운데가<br>
+         도톰하고 양끝으로 갈 수록 눈에 띄게 적어지는 양상을 보입니다.<br>
+        번호 조합이 작은 숫자로만 이루어지거나 큰 숫자로만 이루어지는 경우가 적다는 뜻입니다.</p>
+
+      <img src="images/lotto_sum_graph.png" width="450px" align="center">
+        <p>'로또 알려드림'은 전체 경우의 수 중에 양극단 5%씩 10%를 버리고 90% 구간에<br>
+           해당하는 번호 조합만 추출했고 이로써 당첨 확률을 더 올리게 됩니다. <br>
+            물론 하위 10%에 해당하는 총합의 숫자들이 1등 번호가 될 수도 있겠지만<br>
+            그런 경우를 기다리느니 가장 확률이 높은 구간을 선택하는 것입니다.</p>
+      </div>
+        <h2 class="rull_3"> 로또 알려드림 Go! Go! ☜</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
